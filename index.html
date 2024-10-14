@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap" rel="stylesheet">
+	<script src="https://kit.fontawesome.com/2c36e9b7b1.js"></script>
+	<link rel="stylesheet" href="estilos.css">
+	<title>Portafolio Dinamico - Ian Hdez</title>
+</head>
+<body>
+	
+	<div class="contenedor">
+		<header>
+			<div class="logo">
+				<h1>Museo Virtual </h1>
+				<p>Museo Virtual</p>
+			</div>
+			<form action="">
+				<input type="text" class="barra-busqueda" id="barra-busqueda" placeholder="Buscar">
+			</form>
+			<div class="categorias" id="categorias">
+				<a href="#" class="activo">Todos</a>
+				<a href="#">Vasili-Kandinski</a>
+				<a href="#">Da-Vinci</a>
+				<a href="#">Van-Gogh</a>
+				<a href="#">Miguel-Angel</a>
+			</div>
+		</header>
+
+		<section class="grid" id="grid">
+			<div class="item" 
+				 data-categoria="vasili-kandinski"
+				 data-etiquetas="Vasili Kandinski autos carros calles"
+				 data-descripcion="1.- Lorem ipsum dolor sit amet consectetur."
+			>
+				<div class="item-contenido">
+					<img src="img/ciudad1.jpeg" alt="">
+				</div>
+			</div>
+
+			<div class="item"
+				 data-categoria="da-vinci"
+				 data-etiquetas="Davinci mujeres"
+				 data-descripcion="2.- Lorem ipsum dolor sit amet consectetur."
+			>
+				<div class="item-contenido">
+					<img src="img/naturaleza2.jpg" alt="">
+				</div>
+			</div>
+
+			<div class="item"
+				 data-categoria="van-gogh"
+				 data-etiquetas="Vangogh montañas mar playas"
+				 data-descripcion="3.- Lorem ipsum dolor sit amet consectetur."
+			>
+				<div class="item-contenido">
+					<img src="img/persona1.jpeg" alt="">
+				</div>
+			</div>
+
+			<div class="item"
+				 data-categoria="miguel-angel"
+				 data-etiquetas="Miguel"
+				 data-descripcion="4.- Lorem ipsum dolor sit amet consectetur."
+			>
+				<div class="item-contenido">
+					<img src="img/paisaje1.jpeg" alt="">
+				</div>
+			</div>
+
+			<div class="item"
+				 data-categoria="miguel-angel"
+				 data-etiquetas="miguel"
+				 data-descripcion="5.- Lorem ipsum dolor sit amet consectetur."
+			>
+				<div class="item-contenido">
+					<img src="img/paisaje2.jpg" alt="">
+				</div>
+			</div>
+
+			<div class="item"
+				 data-categoria="da-vinci"
+				 data-etiquetas="Davinci mujeres"
+				 data-descripcion="6.- Lorem ipsum dolor sit amet consectetur."
+			>
+				<div class="item-contenido">
+					<img src="img/naturaleza1.jpeg" alt="">
+				</div>
+			</div>
+
+			<div class="item"
+				 data-categoria="van-gogh"
+				 data-etiquetas="Vangogh montañas niebla"
+				 data-descripcion="7.- Lorem ipsum dolor sit amet consectetur."
+			>
+				<div class="item-contenido">
+					<img src="img/persona2.jpeg" alt="">
+				</div>
+			</div>
+
+			<div class="item" 
+				 data-categoria="vasili-kandinski"
+				 data-etiquetas="Vasili Kandinski paisajes carreteras"
+				 data-descripcion="8.- Lorem ipsum dolor sit amet consectetur."
+			>
+				<div class="item-contenido">
+					<img src="img/ciudad2.jpg" alt="">
+				</div>
+			</div>
+
+			<!-- <div class="item"
+				 data-categoria="naturaleza"
+				 data-etiquetas="naturaleza hojas plantas"
+				 data-descripcion="9.- Lorem ipsum dolor sit amet consectetur.">
+				<div class="item-contenido">
+					<img src="img/naturaleza1.jpeg" alt="">
+				</div>
+			</div>
+			<div class="item"
+				 data-categoria="naturaleza"
+				 data-etiquetas="naturaleza hojas plantas"
+				 data-descripcion="9.- Lorem ipsum dolor sit amet consectetur.">
+				<div class="item-contenido">
+					<img src="img/naturaleza2.jpg" alt="">
+				</div>
+			</div> -->
+
+		</section>
+
+		<section class="overlay" id="overlay">
+			<div class="contenedor-img">
+				<button id="btn-cerrar-popup"><i class="fas fa-times"></i></button>
+				<img src="" alt="">
+			</div>
+			<p class="descripcion"></p>
+		</section>
+
+		<footer class="contenedor">
+			<div class="redes-sociales">
+				<div class="contenedor-icono">
+
+					<a href="#" target="_blank" class="twitter">
+
+					<a href="#" target="_blank" class="twitter">
+						<i class="fab fa-twitter"></i>
+					</a>
+				</div>
+				<div class="contenedor-icono">
+					<a href="#" target="_blank" class="facebook">
+
+					<a href="#" target="_blank" class="facebook">
+						<i class="#"></i>
+					</a>
+				</div>
+				<div class="contenedor-icono">
+
+					<a href="#" target="_blank" class="instagram">
+
+					<a href="#" target="_blank" class="instagram">
+						<i class="fab fa-instagram"></i>
+					</a>
+				</div>
+			</div>
+
+		
+
+		
+		</footer>
+	</div>
+
+	<script src="https://unpkg.com/web-animations-js@2.3.2/web-animations.min.js"></script>
+	<script src="https://unpkg.com/muuri@0.8.0/dist/muuri.min.js"></script>
+	<script src="main.js"></script>
+</body>
+</html>
